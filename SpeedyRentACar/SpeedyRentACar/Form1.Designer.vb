@@ -42,10 +42,10 @@ Partial Class frmRentACar
         Me.lblCustomerRequests = New System.Windows.Forms.Label()
         Me.lblNumberOfDays = New System.Windows.Forms.Label()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.rtbCustomerRequestInput = New System.Windows.Forms.RichTextBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.lblCustomerSignUp = New System.Windows.Forms.Label()
         Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
@@ -239,6 +239,15 @@ Partial Class frmRentACar
         Me.gbxCustomerInformation.TabStop = False
         Me.gbxCustomerInformation.Text = "Customer Information"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(47, 35)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(8, 8)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'rtbCustomerRequestInput
         '
         Me.rtbCustomerRequestInput.Location = New System.Drawing.Point(591, 269)
@@ -265,15 +274,6 @@ Partial Class frmRentACar
         Me.btnNext.TabIndex = 11
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(47, 35)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(8, 8)
-        Me.Button3.TabIndex = 22
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'lblCustomerSignUp
         '

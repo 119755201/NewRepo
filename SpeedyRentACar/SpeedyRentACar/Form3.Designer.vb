@@ -38,6 +38,8 @@ Partial Class frmExtras
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
         cbxRoofRack = New System.Windows.Forms.CheckBox()
         Me.gbxOptionalExtras.SuspendLayout()
         Me.SuspendLayout()
@@ -203,11 +205,31 @@ Partial Class frmExtras
         Me.TextBox4.Size = New System.Drawing.Size(100, 32)
         Me.TextBox4.TabIndex = 12
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(223, 580)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(115, 39)
+        Me.btnBack.TabIndex = 8
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(560, 579)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(115, 40)
+        Me.btnNext.TabIndex = 7
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
         'frmExtras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(934, 681)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.gbxOptionalExtras)
         Me.Name = "frmExtras"
         Me.Text = "Extras"
@@ -232,4 +254,6 @@ Partial Class frmExtras
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnNext As Button
 End Class

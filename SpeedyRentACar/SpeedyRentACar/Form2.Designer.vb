@@ -22,37 +22,27 @@ Partial Class frmCarInformation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lstCarModels = New System.Windows.Forms.ListBox()
         Me.lblAvailableCars = New System.Windows.Forms.Label()
         Me.gbxCarDetails = New System.Windows.Forms.GroupBox()
-        Me.txtTotalDays = New System.Windows.Forms.TextBox()
-        Me.lblTotalDays = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblCarSelected = New System.Windows.Forms.Label()
         Me.txtCarSelected = New System.Windows.Forms.TextBox()
+        Me.lblTotalDays = New System.Windows.Forms.Label()
+        Me.txtTotalDays = New System.Windows.Forms.TextBox()
         Me.gbxPriceDetails = New System.Windows.Forms.GroupBox()
-        Me.lblTotalExVAT = New System.Windows.Forms.Label()
-        Me.lblTotalVAT = New System.Windows.Forms.Label()
-        Me.lblTotalIncVAT = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
-        Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.txtTotalExVAT = New System.Windows.Forms.TextBox()
-        Me.txtTotalVAT = New System.Windows.Forms.TextBox()
         Me.txtTotalIncVAT = New System.Windows.Forms.TextBox()
+        Me.txtTotalVAT = New System.Windows.Forms.TextBox()
+        Me.txtTotalExVAT = New System.Windows.Forms.TextBox()
+        Me.lblTotalIncVAT = New System.Windows.Forms.Label()
+        Me.lblTotalVAT = New System.Windows.Forms.Label()
+        Me.lblTotalExVAT = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.cbxCarChoice = New System.Windows.Forms.ComboBox()
         Me.gbxCarDetails.SuspendLayout()
         Me.gbxPriceDetails.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'lstCarModels
-        '
-        Me.lstCarModels.FormattingEnabled = True
-        Me.lstCarModels.ItemHeight = 25
-        Me.lstCarModels.Items.AddRange(New Object() {"VW Up 1.0 Litre (or equivalent)", "Mini Hatchback 1.2 Litre (or equivalent)", "Audi A1 1.4 Litre (or equivalent)", "Alfa Romeo Giulietta 1.6 Litre (or equivalent) ", "Subaru Outback 2.0 Litre (or equivalent)"})
-        Me.lstCarModels.Location = New System.Drawing.Point(289, 44)
-        Me.lstCarModels.Name = "lstCarModels"
-        Me.lstCarModels.Size = New System.Drawing.Size(364, 29)
-        Me.lstCarModels.TabIndex = 1
         '
         'lblAvailableCars
         '
@@ -66,6 +56,7 @@ Partial Class frmCarInformation
         '
         'gbxCarDetails
         '
+        Me.gbxCarDetails.Controls.Add(Me.cbxCarChoice)
         Me.gbxCarDetails.Controls.Add(Me.btnCalculate)
         Me.gbxCarDetails.Controls.Add(Me.lblPrice)
         Me.gbxCarDetails.Controls.Add(Me.lblCarSelected)
@@ -73,7 +64,6 @@ Partial Class frmCarInformation
         Me.gbxCarDetails.Controls.Add(Me.lblTotalDays)
         Me.gbxCarDetails.Controls.Add(Me.txtTotalDays)
         Me.gbxCarDetails.Controls.Add(Me.lblAvailableCars)
-        Me.gbxCarDetails.Controls.Add(Me.lstCarModels)
         Me.gbxCarDetails.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.gbxCarDetails.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbxCarDetails.Location = New System.Drawing.Point(29, 40)
@@ -83,22 +73,23 @@ Partial Class frmCarInformation
         Me.gbxCarDetails.TabStop = False
         Me.gbxCarDetails.Text = "Car Details"
         '
-        'txtTotalDays
+        'btnCalculate
         '
-        Me.txtTotalDays.Location = New System.Drawing.Point(289, 103)
-        Me.txtTotalDays.Name = "txtTotalDays"
-        Me.txtTotalDays.ReadOnly = True
-        Me.txtTotalDays.Size = New System.Drawing.Size(77, 30)
-        Me.txtTotalDays.TabIndex = 4
+        Me.btnCalculate.Location = New System.Drawing.Point(289, 226)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(116, 47)
+        Me.btnCalculate.TabIndex = 9
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
         '
-        'lblTotalDays
+        'lblPrice
         '
-        Me.lblTotalDays.AutoSize = True
-        Me.lblTotalDays.Location = New System.Drawing.Point(146, 108)
-        Me.lblTotalDays.Name = "lblTotalDays"
-        Me.lblTotalDays.Size = New System.Drawing.Size(106, 25)
-        Me.lblTotalDays.TabIndex = 5
-        Me.lblTotalDays.Text = "Total Days"
+        Me.lblPrice.AutoSize = True
+        Me.lblPrice.Location = New System.Drawing.Point(196, 237)
+        Me.lblPrice.Name = "lblPrice"
+        Me.lblPrice.Size = New System.Drawing.Size(56, 25)
+        Me.lblPrice.TabIndex = 8
+        Me.lblPrice.Text = "Price"
         '
         'lblCarSelected
         '
@@ -117,6 +108,23 @@ Partial Class frmCarInformation
         Me.txtCarSelected.Size = New System.Drawing.Size(313, 30)
         Me.txtCarSelected.TabIndex = 6
         '
+        'lblTotalDays
+        '
+        Me.lblTotalDays.AutoSize = True
+        Me.lblTotalDays.Location = New System.Drawing.Point(146, 108)
+        Me.lblTotalDays.Name = "lblTotalDays"
+        Me.lblTotalDays.Size = New System.Drawing.Size(106, 25)
+        Me.lblTotalDays.TabIndex = 5
+        Me.lblTotalDays.Text = "Total Days"
+        '
+        'txtTotalDays
+        '
+        Me.txtTotalDays.Location = New System.Drawing.Point(289, 103)
+        Me.txtTotalDays.Name = "txtTotalDays"
+        Me.txtTotalDays.ReadOnly = True
+        Me.txtTotalDays.Size = New System.Drawing.Size(77, 30)
+        Me.txtTotalDays.TabIndex = 4
+        '
         'gbxPriceDetails
         '
         Me.gbxPriceDetails.Controls.Add(Me.txtTotalIncVAT)
@@ -134,23 +142,29 @@ Partial Class frmCarInformation
         Me.gbxPriceDetails.TabStop = False
         Me.gbxPriceDetails.Text = "Price Details"
         '
-        'lblTotalExVAT
+        'txtTotalIncVAT
         '
-        Me.lblTotalExVAT.AutoSize = True
-        Me.lblTotalExVAT.Location = New System.Drawing.Point(60, 49)
-        Me.lblTotalExVAT.Name = "lblTotalExVAT"
-        Me.lblTotalExVAT.Size = New System.Drawing.Size(192, 25)
-        Me.lblTotalExVAT.TabIndex = 0
-        Me.lblTotalExVAT.Text = "Total Excluding VAT"
+        Me.txtTotalIncVAT.Location = New System.Drawing.Point(289, 164)
+        Me.txtTotalIncVAT.Name = "txtTotalIncVAT"
+        Me.txtTotalIncVAT.ReadOnly = True
+        Me.txtTotalIncVAT.Size = New System.Drawing.Size(313, 30)
+        Me.txtTotalIncVAT.TabIndex = 9
         '
-        'lblTotalVAT
+        'txtTotalVAT
         '
-        Me.lblTotalVAT.AutoSize = True
-        Me.lblTotalVAT.Location = New System.Drawing.Point(60, 105)
-        Me.lblTotalVAT.Name = "lblTotalVAT"
-        Me.lblTotalVAT.Size = New System.Drawing.Size(102, 25)
-        Me.lblTotalVAT.TabIndex = 1
-        Me.lblTotalVAT.Text = "Total VAT"
+        Me.txtTotalVAT.Location = New System.Drawing.Point(289, 102)
+        Me.txtTotalVAT.Name = "txtTotalVAT"
+        Me.txtTotalVAT.ReadOnly = True
+        Me.txtTotalVAT.Size = New System.Drawing.Size(313, 30)
+        Me.txtTotalVAT.TabIndex = 8
+        '
+        'txtTotalExVAT
+        '
+        Me.txtTotalExVAT.Location = New System.Drawing.Point(289, 49)
+        Me.txtTotalExVAT.Name = "txtTotalExVAT"
+        Me.txtTotalExVAT.ReadOnly = True
+        Me.txtTotalExVAT.Size = New System.Drawing.Size(313, 30)
+        Me.txtTotalExVAT.TabIndex = 7
         '
         'lblTotalIncVAT
         '
@@ -161,47 +175,23 @@ Partial Class frmCarInformation
         Me.lblTotalIncVAT.TabIndex = 2
         Me.lblTotalIncVAT.Text = "Total Including VAT"
         '
-        'lblPrice
+        'lblTotalVAT
         '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Location = New System.Drawing.Point(196, 237)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(56, 25)
-        Me.lblPrice.TabIndex = 8
-        Me.lblPrice.Text = "Price"
+        Me.lblTotalVAT.AutoSize = True
+        Me.lblTotalVAT.Location = New System.Drawing.Point(60, 105)
+        Me.lblTotalVAT.Name = "lblTotalVAT"
+        Me.lblTotalVAT.Size = New System.Drawing.Size(102, 25)
+        Me.lblTotalVAT.TabIndex = 1
+        Me.lblTotalVAT.Text = "Total VAT"
         '
-        'btnCalculate
+        'lblTotalExVAT
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(289, 226)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(116, 47)
-        Me.btnCalculate.TabIndex = 9
-        Me.btnCalculate.Text = "Calculate"
-        Me.btnCalculate.UseVisualStyleBackColor = True
-        '
-        'txtTotalExVAT
-        '
-        Me.txtTotalExVAT.Location = New System.Drawing.Point(289, 49)
-        Me.txtTotalExVAT.Name = "txtTotalExVAT"
-        Me.txtTotalExVAT.ReadOnly = True
-        Me.txtTotalExVAT.Size = New System.Drawing.Size(313, 30)
-        Me.txtTotalExVAT.TabIndex = 7
-        '
-        'txtTotalVAT
-        '
-        Me.txtTotalVAT.Location = New System.Drawing.Point(289, 102)
-        Me.txtTotalVAT.Name = "txtTotalVAT"
-        Me.txtTotalVAT.ReadOnly = True
-        Me.txtTotalVAT.Size = New System.Drawing.Size(313, 30)
-        Me.txtTotalVAT.TabIndex = 8
-        '
-        'txtTotalIncVAT
-        '
-        Me.txtTotalIncVAT.Location = New System.Drawing.Point(289, 164)
-        Me.txtTotalIncVAT.Name = "txtTotalIncVAT"
-        Me.txtTotalIncVAT.ReadOnly = True
-        Me.txtTotalIncVAT.Size = New System.Drawing.Size(313, 30)
-        Me.txtTotalIncVAT.TabIndex = 9
+        Me.lblTotalExVAT.AutoSize = True
+        Me.lblTotalExVAT.Location = New System.Drawing.Point(60, 49)
+        Me.lblTotalExVAT.Name = "lblTotalExVAT"
+        Me.lblTotalExVAT.Size = New System.Drawing.Size(192, 25)
+        Me.lblTotalExVAT.TabIndex = 0
+        Me.lblTotalExVAT.Text = "Total Excluding VAT"
         '
         'btnNext
         '
@@ -221,6 +211,15 @@ Partial Class frmCarInformation
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'cbxCarChoice
+        '
+        Me.cbxCarChoice.FormattingEnabled = True
+        Me.cbxCarChoice.Items.AddRange(New Object() {"VW Up 1.0 Litre (or equivalent)", "Mini hatchback 1.2 Litre (or equivalent)", "Audi A1 1.4 Litre (or equivalent)", "Alfa Romeo Giulietta 1.6 Litre (or equivalent)", "Subaru Outback 2.0 Litre (or equivalent)"})
+        Me.cbxCarChoice.Location = New System.Drawing.Point(289, 44)
+        Me.cbxCarChoice.Name = "cbxCarChoice"
+        Me.cbxCarChoice.Size = New System.Drawing.Size(313, 33)
+        Me.cbxCarChoice.TabIndex = 10
+        '
         'frmCarInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -239,8 +238,6 @@ Partial Class frmCarInformation
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents lstCarModels As ListBox
     Friend WithEvents lblAvailableCars As Label
     Friend WithEvents gbxCarDetails As GroupBox
     Friend WithEvents lblTotalDays As Label
@@ -258,4 +255,5 @@ Partial Class frmCarInformation
     Friend WithEvents txtTotalExVAT As TextBox
     Friend WithEvents btnNext As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents cbxCarChoice As ComboBox
 End Class
