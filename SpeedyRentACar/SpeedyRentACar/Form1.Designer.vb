@@ -22,16 +22,15 @@ Partial Class frmRentACar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.txtCustomerName = New System.Windows.Forms.TextBox()
+        Me.txtStAddress = New System.Windows.Forms.TextBox()
+        Me.txtTownCity = New System.Windows.Forms.TextBox()
+        Me.txtCounty = New System.Windows.Forms.TextBox()
+        Me.txtContactNumber = New System.Windows.Forms.TextBox()
+        Me.txtDaysRequiredTotal = New System.Windows.Forms.TextBox()
+        Me.txtCardNumber = New System.Windows.Forms.TextBox()
+        Me.txtPaymentType = New System.Windows.Forms.TextBox()
+        Me.txtPassportNumber = New System.Windows.Forms.TextBox()
         Me.lblCustomerName = New System.Windows.Forms.Label()
         Me.lblCustomerStAddress = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,82 +42,86 @@ Partial Class frmRentACar
         Me.lblCustomerRequests = New System.Windows.Forms.Label()
         Me.lblNumberOfDays = New System.Windows.Forms.Label()
         Me.gbxCustomerInformation = New System.Windows.Forms.GroupBox()
+        Me.rtbCustomerRequestInput = New System.Windows.Forms.RichTextBox()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.lblCustomerSignUp = New System.Windows.Forms.Label()
+        Me.gbxCustomerInformation.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtCustomerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(262, 104)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox1.TabIndex = 0
+        Me.txtCustomerName.Location = New System.Drawing.Point(235, 41)
+        Me.txtCustomerName.MaxLength = 30
+        Me.txtCustomerName.Name = "txtCustomerName"
+        Me.txtCustomerName.Size = New System.Drawing.Size(100, 26)
+        Me.txtCustomerName.TabIndex = 0
         '
-        'TextBox2
+        'txtStAddress
         '
-        Me.TextBox2.Location = New System.Drawing.Point(262, 156)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox2.TabIndex = 2
+        Me.txtStAddress.Location = New System.Drawing.Point(236, 90)
+        Me.txtStAddress.MaxLength = 50
+        Me.txtStAddress.Name = "txtStAddress"
+        Me.txtStAddress.Size = New System.Drawing.Size(100, 26)
+        Me.txtStAddress.TabIndex = 2
         '
-        'TextBox3
+        'txtTownCity
         '
-        Me.TextBox3.Location = New System.Drawing.Point(262, 202)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox3.TabIndex = 3
+        Me.txtTownCity.Location = New System.Drawing.Point(235, 153)
+        Me.txtTownCity.MaxLength = 20
+        Me.txtTownCity.Name = "txtTownCity"
+        Me.txtTownCity.Size = New System.Drawing.Size(100, 26)
+        Me.txtTownCity.TabIndex = 3
         '
-        'TextBox4
+        'txtCounty
         '
-        Me.TextBox4.Location = New System.Drawing.Point(262, 249)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox4.TabIndex = 4
+        Me.txtCounty.Location = New System.Drawing.Point(235, 213)
+        Me.txtCounty.MaxLength = 10
+        Me.txtCounty.Name = "txtCounty"
+        Me.txtCounty.Size = New System.Drawing.Size(100, 26)
+        Me.txtCounty.TabIndex = 4
         '
-        'TextBox5
+        'txtContactNumber
         '
-        Me.TextBox5.Location = New System.Drawing.Point(262, 307)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox5.TabIndex = 5
+        Me.txtContactNumber.Location = New System.Drawing.Point(236, 269)
+        Me.txtContactNumber.MaxLength = 8
+        Me.txtContactNumber.Name = "txtContactNumber"
+        Me.txtContactNumber.Size = New System.Drawing.Size(100, 26)
+        Me.txtContactNumber.TabIndex = 5
         '
-        'TextBox6
+        'txtDaysRequiredTotal
         '
-        Me.TextBox6.Location = New System.Drawing.Point(668, 307)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox6.TabIndex = 10
+        Me.txtDaysRequiredTotal.Location = New System.Drawing.Point(591, 41)
+        Me.txtDaysRequiredTotal.Name = "txtDaysRequiredTotal"
+        Me.txtDaysRequiredTotal.Size = New System.Drawing.Size(79, 26)
+        Me.txtDaysRequiredTotal.TabIndex = 10
         '
-        'TextBox7
+        'txtCardNumber
         '
-        Me.TextBox7.Location = New System.Drawing.Point(668, 249)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox7.TabIndex = 9
+        Me.txtCardNumber.Location = New System.Drawing.Point(591, 210)
+        Me.txtCardNumber.Name = "txtCardNumber"
+        Me.txtCardNumber.Size = New System.Drawing.Size(100, 26)
+        Me.txtCardNumber.TabIndex = 8
         '
-        'TextBox8
+        'txtPaymentType
         '
-        Me.TextBox8.Location = New System.Drawing.Point(668, 202)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox8.TabIndex = 8
+        Me.txtPaymentType.Location = New System.Drawing.Point(591, 153)
+        Me.txtPaymentType.Name = "txtPaymentType"
+        Me.txtPaymentType.Size = New System.Drawing.Size(100, 26)
+        Me.txtPaymentType.TabIndex = 7
         '
-        'TextBox9
+        'txtPassportNumber
         '
-        Me.TextBox9.Location = New System.Drawing.Point(668, 156)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox9.TabIndex = 7
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(668, 104)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 26)
-        Me.TextBox10.TabIndex = 6
+        Me.txtPassportNumber.Location = New System.Drawing.Point(591, 90)
+        Me.txtPassportNumber.Name = "txtPassportNumber"
+        Me.txtPassportNumber.Size = New System.Drawing.Size(100, 26)
+        Me.txtPassportNumber.TabIndex = 6
         '
         'lblCustomerName
         '
         Me.lblCustomerName.AutoSize = True
-        Me.lblCustomerName.Location = New System.Drawing.Point(131, 104)
+        Me.lblCustomerName.Location = New System.Drawing.Point(72, 41)
         Me.lblCustomerName.Name = "lblCustomerName"
         Me.lblCustomerName.Size = New System.Drawing.Size(124, 20)
         Me.lblCustomerName.TabIndex = 11
@@ -127,7 +130,7 @@ Partial Class frmRentACar
         'lblCustomerStAddress
         '
         Me.lblCustomerStAddress.AutoSize = True
-        Me.lblCustomerStAddress.Location = New System.Drawing.Point(131, 156)
+        Me.lblCustomerStAddress.Location = New System.Drawing.Point(89, 90)
         Me.lblCustomerStAddress.Name = "lblCustomerStAddress"
         Me.lblCustomerStAddress.Size = New System.Drawing.Size(116, 20)
         Me.lblCustomerStAddress.TabIndex = 12
@@ -136,7 +139,7 @@ Partial Class frmRentACar
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(131, 202)
+        Me.Label3.Location = New System.Drawing.Point(119, 153)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(77, 20)
         Me.Label3.TabIndex = 13
@@ -145,7 +148,7 @@ Partial Class frmRentACar
         'lblCounty
         '
         Me.lblCounty.AutoSize = True
-        Me.lblCounty.Location = New System.Drawing.Point(131, 249)
+        Me.lblCounty.Location = New System.Drawing.Point(146, 213)
         Me.lblCounty.Name = "lblCounty"
         Me.lblCounty.Size = New System.Drawing.Size(59, 20)
         Me.lblCounty.TabIndex = 14
@@ -154,7 +157,7 @@ Partial Class frmRentACar
         'lblContactNumber
         '
         Me.lblContactNumber.AutoSize = True
-        Me.lblContactNumber.Location = New System.Drawing.Point(122, 310)
+        Me.lblContactNumber.Location = New System.Drawing.Point(72, 269)
         Me.lblContactNumber.Name = "lblContactNumber"
         Me.lblContactNumber.Size = New System.Drawing.Size(125, 20)
         Me.lblContactNumber.TabIndex = 15
@@ -163,7 +166,7 @@ Partial Class frmRentACar
         'lblPassportNumber
         '
         Me.lblPassportNumber.AutoSize = True
-        Me.lblPassportNumber.Location = New System.Drawing.Point(509, 104)
+        Me.lblPassportNumber.Location = New System.Drawing.Point(443, 90)
         Me.lblPassportNumber.Name = "lblPassportNumber"
         Me.lblPassportNumber.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.lblPassportNumber.Size = New System.Drawing.Size(132, 20)
@@ -173,7 +176,7 @@ Partial Class frmRentACar
         'lblPaymentType
         '
         Me.lblPaymentType.AutoSize = True
-        Me.lblPaymentType.Location = New System.Drawing.Point(532, 156)
+        Me.lblPaymentType.Location = New System.Drawing.Point(466, 153)
         Me.lblPaymentType.Name = "lblPaymentType"
         Me.lblPaymentType.Size = New System.Drawing.Size(109, 20)
         Me.lblPaymentType.TabIndex = 19
@@ -182,7 +185,7 @@ Partial Class frmRentACar
         'lblCardNumber
         '
         Me.lblCardNumber.AutoSize = True
-        Me.lblCardNumber.Location = New System.Drawing.Point(450, 202)
+        Me.lblCardNumber.Location = New System.Drawing.Point(384, 210)
         Me.lblCardNumber.Name = "lblCardNumber"
         Me.lblCardNumber.Size = New System.Drawing.Size(191, 20)
         Me.lblCardNumber.TabIndex = 18
@@ -191,7 +194,7 @@ Partial Class frmRentACar
         'lblCustomerRequests
         '
         Me.lblCustomerRequests.AutoSize = True
-        Me.lblCustomerRequests.Location = New System.Drawing.Point(495, 249)
+        Me.lblCustomerRequests.Location = New System.Drawing.Point(420, 269)
         Me.lblCustomerRequests.Name = "lblCustomerRequests"
         Me.lblCustomerRequests.Size = New System.Drawing.Size(155, 20)
         Me.lblCustomerRequests.TabIndex = 17
@@ -200,7 +203,7 @@ Partial Class frmRentACar
         'lblNumberOfDays
         '
         Me.lblNumberOfDays.AutoSize = True
-        Me.lblNumberOfDays.Location = New System.Drawing.Point(449, 313)
+        Me.lblNumberOfDays.Location = New System.Drawing.Point(383, 41)
         Me.lblNumberOfDays.Name = "lblNumberOfDays"
         Me.lblNumberOfDays.Size = New System.Drawing.Size(192, 20)
         Me.lblNumberOfDays.TabIndex = 16
@@ -208,56 +211,107 @@ Partial Class frmRentACar
         '
         'gbxCustomerInformation
         '
-        Me.gbxCustomerInformation.Location = New System.Drawing.Point(27, 37)
+        Me.gbxCustomerInformation.Controls.Add(Me.Button3)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblContactNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCardNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtCustomerName)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtStAddress)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtTownCity)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtCounty)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCustomerStAddress)
+        Me.gbxCustomerInformation.Controls.Add(Me.Label3)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCounty)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblPaymentType)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblPassportNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtPassportNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCustomerName)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtPaymentType)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtCardNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.rtbCustomerRequestInput)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtDaysRequiredTotal)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblNumberOfDays)
+        Me.gbxCustomerInformation.Controls.Add(Me.txtContactNumber)
+        Me.gbxCustomerInformation.Controls.Add(Me.lblCustomerRequests)
+        Me.gbxCustomerInformation.Location = New System.Drawing.Point(29, 119)
         Me.gbxCustomerInformation.Name = "gbxCustomerInformation"
         Me.gbxCustomerInformation.Size = New System.Drawing.Size(868, 414)
         Me.gbxCustomerInformation.TabIndex = 22
         Me.gbxCustomerInformation.TabStop = False
         Me.gbxCustomerInformation.Text = "Customer Information"
         '
+        'rtbCustomerRequestInput
+        '
+        Me.rtbCustomerRequestInput.Location = New System.Drawing.Point(591, 269)
+        Me.rtbCustomerRequestInput.MaxLength = 300
+        Me.rtbCustomerRequestInput.Name = "rtbCustomerRequestInput"
+        Me.rtbCustomerRequestInput.Size = New System.Drawing.Size(221, 119)
+        Me.rtbCustomerRequestInput.TabIndex = 11
+        Me.rtbCustomerRequestInput.Text = ""
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(216, 581)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(149, 50)
+        Me.btnExit.TabIndex = 12
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'btnNext
+        '
+        Me.btnNext.Location = New System.Drawing.Point(571, 581)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(149, 50)
+        Me.btnNext.TabIndex = 11
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(47, 35)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(8, 8)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'lblCustomerSignUp
+        '
+        Me.lblCustomerSignUp.AutoSize = True
+        Me.lblCustomerSignUp.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCustomerSignUp.Location = New System.Drawing.Point(242, 37)
+        Me.lblCustomerSignUp.Name = "lblCustomerSignUp"
+        Me.lblCustomerSignUp.Size = New System.Drawing.Size(417, 55)
+        Me.lblCustomerSignUp.TabIndex = 23
+        Me.lblCustomerSignUp.Text = "Customer Sign Up"
+        '
         'frmRentACar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(934, 577)
-        Me.Controls.Add(Me.lblPassportNumber)
-        Me.Controls.Add(Me.lblPaymentType)
-        Me.Controls.Add(Me.lblCardNumber)
-        Me.Controls.Add(Me.lblCustomerRequests)
-        Me.Controls.Add(Me.lblNumberOfDays)
-        Me.Controls.Add(Me.lblContactNumber)
-        Me.Controls.Add(Me.lblCounty)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.lblCustomerStAddress)
-        Me.Controls.Add(Me.lblCustomerName)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(934, 681)
+        Me.Controls.Add(Me.lblCustomerSignUp)
+        Me.Controls.Add(Me.btnNext)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.gbxCustomerInformation)
         Me.Name = "frmRentACar"
         Me.Text = "Rent-A-Car"
+        Me.gbxCustomerInformation.ResumeLayout(False)
+        Me.gbxCustomerInformation.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents txtCustomerName As TextBox
+    Friend WithEvents txtStAddress As TextBox
+    Friend WithEvents txtTownCity As TextBox
+    Friend WithEvents txtCounty As TextBox
+    Friend WithEvents txtContactNumber As TextBox
+    Friend WithEvents txtDaysRequiredTotal As TextBox
+    Friend WithEvents txtCardNumber As TextBox
+    Friend WithEvents txtPaymentType As TextBox
+    Friend WithEvents txtPassportNumber As TextBox
     Friend WithEvents lblCustomerName As Label
     Friend WithEvents lblCustomerStAddress As Label
     Friend WithEvents Label3 As Label
@@ -269,4 +323,9 @@ Partial Class frmRentACar
     Friend WithEvents lblCustomerRequests As Label
     Friend WithEvents lblNumberOfDays As Label
     Friend WithEvents gbxCustomerInformation As GroupBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents rtbCustomerRequestInput As RichTextBox
+    Friend WithEvents btnNext As Button
+    Friend WithEvents lblCustomerSignUp As Label
 End Class
