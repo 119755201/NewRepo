@@ -24,32 +24,41 @@ Partial Class frmExtras
     Private Sub InitializeComponent()
         Dim cbxRoofRack As System.Windows.Forms.CheckBox
         Me.gbxOptionalExtras = New System.Windows.Forms.GroupBox()
-        Me.lblChildSeat = New System.Windows.Forms.Label()
-        Me.lblSkiEquipment = New System.Windows.Forms.Label()
-        Me.lblRoofRack = New System.Windows.Forms.Label()
-        Me.cbxChildSeat = New System.Windows.Forms.CheckBox()
-        Me.cbxSkiEquipment = New System.Windows.Forms.CheckBox()
-        Me.lblSatNav = New System.Windows.Forms.Label()
-        Me.cbxSatNav = New System.Windows.Forms.CheckBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtSatNav = New System.Windows.Forms.TextBox()
+        Me.txtRoofRack = New System.Windows.Forms.TextBox()
+        Me.txtSkiEquipment = New System.Windows.Forms.TextBox()
+        Me.txtChildSeat = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbxSatNav = New System.Windows.Forms.CheckBox()
+        Me.cbxSkiEquipment = New System.Windows.Forms.CheckBox()
+        Me.cbxChildSeat = New System.Windows.Forms.CheckBox()
+        Me.lblSatNav = New System.Windows.Forms.Label()
+        Me.lblRoofRack = New System.Windows.Forms.Label()
+        Me.lblSkiEquipment = New System.Windows.Forms.Label()
+        Me.lblChildSeat = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
         cbxRoofRack = New System.Windows.Forms.CheckBox()
         Me.gbxOptionalExtras.SuspendLayout()
         Me.SuspendLayout()
         '
+        'cbxRoofRack
+        '
+        cbxRoofRack.AutoSize = True
+        cbxRoofRack.Location = New System.Drawing.Point(574, 212)
+        cbxRoofRack.Name = "cbxRoofRack"
+        cbxRoofRack.Size = New System.Drawing.Size(22, 21)
+        cbxRoofRack.TabIndex = 6
+        cbxRoofRack.UseVisualStyleBackColor = True
+        '
         'gbxOptionalExtras
         '
-        Me.gbxOptionalExtras.Controls.Add(Me.TextBox4)
-        Me.gbxOptionalExtras.Controls.Add(Me.TextBox3)
-        Me.gbxOptionalExtras.Controls.Add(Me.TextBox2)
-        Me.gbxOptionalExtras.Controls.Add(Me.TextBox1)
+        Me.gbxOptionalExtras.Controls.Add(Me.txtSatNav)
+        Me.gbxOptionalExtras.Controls.Add(Me.txtRoofRack)
+        Me.gbxOptionalExtras.Controls.Add(Me.txtSkiEquipment)
+        Me.gbxOptionalExtras.Controls.Add(Me.txtChildSeat)
         Me.gbxOptionalExtras.Controls.Add(Me.Label2)
         Me.gbxOptionalExtras.Controls.Add(Me.Label3)
         Me.gbxOptionalExtras.Controls.Add(Me.Label1)
@@ -69,93 +78,37 @@ Partial Class frmExtras
         Me.gbxOptionalExtras.TabStop = False
         Me.gbxOptionalExtras.Text = "Optional Extras"
         '
-        'lblChildSeat
+        'txtSatNav
         '
-        Me.lblChildSeat.AutoSize = True
-        Me.lblChildSeat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChildSeat.Location = New System.Drawing.Point(230, 111)
-        Me.lblChildSeat.Name = "lblChildSeat"
-        Me.lblChildSeat.Size = New System.Drawing.Size(124, 29)
-        Me.lblChildSeat.TabIndex = 0
-        Me.lblChildSeat.Text = "Child Seat"
+        Me.txtSatNav.Location = New System.Drawing.Point(417, 264)
+        Me.txtSatNav.Name = "txtSatNav"
+        Me.txtSatNav.ReadOnly = True
+        Me.txtSatNav.Size = New System.Drawing.Size(100, 32)
+        Me.txtSatNav.TabIndex = 12
         '
-        'lblSkiEquipment
+        'txtRoofRack
         '
-        Me.lblSkiEquipment.AutoSize = True
-        Me.lblSkiEquipment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSkiEquipment.Location = New System.Drawing.Point(185, 158)
-        Me.lblSkiEquipment.Name = "lblSkiEquipment"
-        Me.lblSkiEquipment.Size = New System.Drawing.Size(169, 29)
-        Me.lblSkiEquipment.TabIndex = 1
-        Me.lblSkiEquipment.Text = "Ski Equipment"
+        Me.txtRoofRack.Location = New System.Drawing.Point(417, 208)
+        Me.txtRoofRack.Name = "txtRoofRack"
+        Me.txtRoofRack.ReadOnly = True
+        Me.txtRoofRack.Size = New System.Drawing.Size(100, 32)
+        Me.txtRoofRack.TabIndex = 11
         '
-        'lblRoofRack
+        'txtSkiEquipment
         '
-        Me.lblRoofRack.AutoSize = True
-        Me.lblRoofRack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRoofRack.Location = New System.Drawing.Point(29, 211)
-        Me.lblRoofRack.Name = "lblRoofRack"
-        Me.lblRoofRack.Size = New System.Drawing.Size(325, 29)
-        Me.lblRoofRack.TabIndex = 2
-        Me.lblRoofRack.Text = "Roof Mounted Luggage Rack"
+        Me.txtSkiEquipment.Location = New System.Drawing.Point(417, 157)
+        Me.txtSkiEquipment.Name = "txtSkiEquipment"
+        Me.txtSkiEquipment.ReadOnly = True
+        Me.txtSkiEquipment.Size = New System.Drawing.Size(100, 32)
+        Me.txtSkiEquipment.TabIndex = 10
         '
-        'cbxChildSeat
+        'txtChildSeat
         '
-        Me.cbxChildSeat.AutoSize = True
-        Me.cbxChildSeat.Location = New System.Drawing.Point(574, 111)
-        Me.cbxChildSeat.Name = "cbxChildSeat"
-        Me.cbxChildSeat.Size = New System.Drawing.Size(22, 21)
-        Me.cbxChildSeat.TabIndex = 4
-        Me.cbxChildSeat.UseVisualStyleBackColor = True
-        '
-        'cbxSkiEquipment
-        '
-        Me.cbxSkiEquipment.AutoSize = True
-        Me.cbxSkiEquipment.Location = New System.Drawing.Point(574, 161)
-        Me.cbxSkiEquipment.Name = "cbxSkiEquipment"
-        Me.cbxSkiEquipment.Size = New System.Drawing.Size(22, 21)
-        Me.cbxSkiEquipment.TabIndex = 5
-        Me.cbxSkiEquipment.UseVisualStyleBackColor = True
-        '
-        'cbxRoofRack
-        '
-        cbxRoofRack.AutoSize = True
-        cbxRoofRack.Location = New System.Drawing.Point(574, 212)
-        cbxRoofRack.Name = "cbxRoofRack"
-        cbxRoofRack.Size = New System.Drawing.Size(22, 21)
-        cbxRoofRack.TabIndex = 6
-        cbxRoofRack.UseVisualStyleBackColor = True
-        '
-        'lblSatNav
-        '
-        Me.lblSatNav.AutoSize = True
-        Me.lblSatNav.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSatNav.Location = New System.Drawing.Point(83, 267)
-        Me.lblSatNav.Name = "lblSatNav"
-        Me.lblSatNav.Size = New System.Drawing.Size(271, 29)
-        Me.lblSatNav.TabIndex = 3
-        Me.lblSatNav.Text = "Sat-Nav (Total Duration)"
-        '
-        'cbxSatNav
-        '
-        Me.cbxSatNav.AutoSize = True
-        Me.cbxSatNav.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbxSatNav.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.cbxSatNav.Location = New System.Drawing.Point(574, 264)
-        Me.cbxSatNav.Name = "cbxSatNav"
-        Me.cbxSatNav.Size = New System.Drawing.Size(22, 21)
-        Me.cbxSatNav.TabIndex = 1
-        Me.cbxSatNav.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, CType((System.Drawing.FontStyle.Italic Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(434, 54)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 26)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Prices"
+        Me.txtChildSeat.Location = New System.Drawing.Point(417, 111)
+        Me.txtChildSeat.Name = "txtChildSeat"
+        Me.txtChildSeat.ReadOnly = True
+        Me.txtChildSeat.Size = New System.Drawing.Size(100, 32)
+        Me.txtChildSeat.TabIndex = 9
         '
         'Label2
         '
@@ -173,37 +126,84 @@ Partial Class frmExtras
         Me.Label3.Size = New System.Drawing.Size(0, 26)
         Me.Label3.TabIndex = 2
         '
-        'TextBox1
+        'Label1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(417, 111)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(100, 32)
-        Me.TextBox1.TabIndex = 9
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, CType((System.Drawing.FontStyle.Italic Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(434, 54)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(73, 26)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Prices"
         '
-        'TextBox2
+        'cbxSatNav
         '
-        Me.TextBox2.Location = New System.Drawing.Point(417, 157)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(100, 32)
-        Me.TextBox2.TabIndex = 10
+        Me.cbxSatNav.AutoSize = True
+        Me.cbxSatNav.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxSatNav.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.cbxSatNav.Location = New System.Drawing.Point(574, 264)
+        Me.cbxSatNav.Name = "cbxSatNav"
+        Me.cbxSatNav.Size = New System.Drawing.Size(22, 21)
+        Me.cbxSatNav.TabIndex = 1
+        Me.cbxSatNav.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'cbxSkiEquipment
         '
-        Me.TextBox3.Location = New System.Drawing.Point(417, 208)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(100, 32)
-        Me.TextBox3.TabIndex = 11
+        Me.cbxSkiEquipment.AutoSize = True
+        Me.cbxSkiEquipment.Location = New System.Drawing.Point(574, 161)
+        Me.cbxSkiEquipment.Name = "cbxSkiEquipment"
+        Me.cbxSkiEquipment.Size = New System.Drawing.Size(22, 21)
+        Me.cbxSkiEquipment.TabIndex = 5
+        Me.cbxSkiEquipment.UseVisualStyleBackColor = True
         '
-        'TextBox4
+        'cbxChildSeat
         '
-        Me.TextBox4.Location = New System.Drawing.Point(417, 264)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(100, 32)
-        Me.TextBox4.TabIndex = 12
+        Me.cbxChildSeat.AutoSize = True
+        Me.cbxChildSeat.Location = New System.Drawing.Point(574, 111)
+        Me.cbxChildSeat.Name = "cbxChildSeat"
+        Me.cbxChildSeat.Size = New System.Drawing.Size(22, 21)
+        Me.cbxChildSeat.TabIndex = 4
+        Me.cbxChildSeat.UseVisualStyleBackColor = True
+        '
+        'lblSatNav
+        '
+        Me.lblSatNav.AutoSize = True
+        Me.lblSatNav.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSatNav.Location = New System.Drawing.Point(83, 267)
+        Me.lblSatNav.Name = "lblSatNav"
+        Me.lblSatNav.Size = New System.Drawing.Size(271, 29)
+        Me.lblSatNav.TabIndex = 3
+        Me.lblSatNav.Text = "Sat-Nav (Total Duration)"
+        '
+        'lblRoofRack
+        '
+        Me.lblRoofRack.AutoSize = True
+        Me.lblRoofRack.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRoofRack.Location = New System.Drawing.Point(29, 211)
+        Me.lblRoofRack.Name = "lblRoofRack"
+        Me.lblRoofRack.Size = New System.Drawing.Size(325, 29)
+        Me.lblRoofRack.TabIndex = 2
+        Me.lblRoofRack.Text = "Roof Mounted Luggage Rack"
+        '
+        'lblSkiEquipment
+        '
+        Me.lblSkiEquipment.AutoSize = True
+        Me.lblSkiEquipment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSkiEquipment.Location = New System.Drawing.Point(185, 158)
+        Me.lblSkiEquipment.Name = "lblSkiEquipment"
+        Me.lblSkiEquipment.Size = New System.Drawing.Size(169, 29)
+        Me.lblSkiEquipment.TabIndex = 1
+        Me.lblSkiEquipment.Text = "Ski Equipment"
+        '
+        'lblChildSeat
+        '
+        Me.lblChildSeat.AutoSize = True
+        Me.lblChildSeat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChildSeat.Location = New System.Drawing.Point(230, 111)
+        Me.lblChildSeat.Name = "lblChildSeat"
+        Me.lblChildSeat.Size = New System.Drawing.Size(124, 29)
+        Me.lblChildSeat.TabIndex = 0
+        Me.lblChildSeat.Text = "Child Seat"
         '
         'btnBack
         '
@@ -247,10 +247,10 @@ Partial Class frmExtras
     Friend WithEvents lblSkiEquipment As Label
     Friend WithEvents lblChildSeat As Label
     Friend WithEvents cbxSatNav As CheckBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSatNav As TextBox
+    Friend WithEvents txtRoofRack As TextBox
+    Friend WithEvents txtSkiEquipment As TextBox
+    Friend WithEvents txtChildSeat As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label

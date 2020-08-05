@@ -117,12 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>It is strongly recommended that the customer takes out collision damage insurance and theft insurance to limit their personal liability in the case of theft and/or damage to the vehicle.
- 
-Contents insurance may be taken out to protect the customer against theft of luggage, mobile phones, notebook computers etc. from the vehicle.</value>
-  </data>
-  <metadata name="cbxVehicleContents.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
 </root>
