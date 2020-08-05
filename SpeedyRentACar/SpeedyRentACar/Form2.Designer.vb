@@ -24,6 +24,7 @@ Partial Class frmCarInformation
     Private Sub InitializeComponent()
         Me.lblAvailableCars = New System.Windows.Forms.Label()
         Me.gbxCarDetails = New System.Windows.Forms.GroupBox()
+        Me.cbxCarChoice = New System.Windows.Forms.ComboBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblCarSelected = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class frmCarInformation
         Me.lblTotalExVAT = New System.Windows.Forms.Label()
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.cbxCarChoice = New System.Windows.Forms.ComboBox()
         Me.gbxCarDetails.SuspendLayout()
         Me.gbxPriceDetails.SuspendLayout()
         Me.SuspendLayout()
@@ -72,6 +72,15 @@ Partial Class frmCarInformation
         Me.gbxCarDetails.TabIndex = 3
         Me.gbxCarDetails.TabStop = False
         Me.gbxCarDetails.Text = "Car Details"
+        '
+        'cbxCarChoice
+        '
+        Me.cbxCarChoice.FormattingEnabled = True
+        Me.cbxCarChoice.Items.AddRange(New Object() {"VW Up 1.0 Litre (or equivalent)", "Mini hatchback 1.2 Litre (or equivalent)", "Audi A1 1.4 Litre (or equivalent)", "Alfa Romeo Giulietta 1.6 Litre (or equivalent)", "Subaru Outback 2.0 Litre (or equivalent)"})
+        Me.cbxCarChoice.Location = New System.Drawing.Point(289, 44)
+        Me.cbxCarChoice.Name = "cbxCarChoice"
+        Me.cbxCarChoice.Size = New System.Drawing.Size(313, 33)
+        Me.cbxCarChoice.TabIndex = 10
         '
         'btnCalculate
         '
@@ -210,15 +219,6 @@ Partial Class frmCarInformation
         Me.btnBack.TabIndex = 6
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
-        '
-        'cbxCarChoice
-        '
-        Me.cbxCarChoice.FormattingEnabled = True
-        Me.cbxCarChoice.Items.AddRange(New Object() {"VW Up 1.0 Litre (or equivalent)", "Mini hatchback 1.2 Litre (or equivalent)", "Audi A1 1.4 Litre (or equivalent)", "Alfa Romeo Giulietta 1.6 Litre (or equivalent)", "Subaru Outback 2.0 Litre (or equivalent)"})
-        Me.cbxCarChoice.Location = New System.Drawing.Point(289, 44)
-        Me.cbxCarChoice.Name = "cbxCarChoice"
-        Me.cbxCarChoice.Size = New System.Drawing.Size(313, 33)
-        Me.cbxCarChoice.TabIndex = 10
         '
         'frmCarInformation
         '
