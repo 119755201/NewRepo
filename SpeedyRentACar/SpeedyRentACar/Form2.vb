@@ -2,6 +2,8 @@
     Dim carChoice As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnNext.Click
 
+
+
         ' Declaring the following as variables as they will hold pricing information '
 
         Dim ChildSeat, SkiEquipment, RoofRack, SatNav As Double

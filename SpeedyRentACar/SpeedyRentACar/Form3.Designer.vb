@@ -227,6 +227,7 @@ Partial Class frmExtras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(934, 681)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnNext)

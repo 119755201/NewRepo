@@ -22,8 +22,8 @@ Partial Class frmInsuranceInformation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInsuranceInformation))
         Dim cbxVehicleContents As System.Windows.Forms.CheckBox
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInsuranceInformation))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -44,6 +44,15 @@ Partial Class frmInsuranceInformation
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'cbxVehicleContents
+        '
+        cbxVehicleContents.AutoSize = True
+        cbxVehicleContents.Location = New System.Drawing.Point(628, 171)
+        cbxVehicleContents.Name = "cbxVehicleContents"
+        cbxVehicleContents.Size = New System.Drawing.Size(22, 21)
+        cbxVehicleContents.TabIndex = 22
+        cbxVehicleContents.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -136,15 +145,6 @@ Partial Class frmInsuranceInformation
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "Prices"
         '
-        'cbxVehicleContents
-        '
-        cbxVehicleContents.AutoSize = True
-        cbxVehicleContents.Location = New System.Drawing.Point(628, 171)
-        cbxVehicleContents.Name = "cbxVehicleContents"
-        cbxVehicleContents.Size = New System.Drawing.Size(22, 21)
-        cbxVehicleContents.TabIndex = 22
-        cbxVehicleContents.UseVisualStyleBackColor = True
-        '
         'cbxTheft
         '
         Me.cbxTheft.AutoSize = True
@@ -215,6 +215,7 @@ Partial Class frmInsuranceInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(934, 681)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnNext)

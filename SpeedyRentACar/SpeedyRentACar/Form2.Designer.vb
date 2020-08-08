@@ -47,10 +47,10 @@ Partial Class frmCarInformation
         'lblAvailableCars
         '
         Me.lblAvailableCars.AutoSize = True
-        Me.lblAvailableCars.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAvailableCars.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAvailableCars.Location = New System.Drawing.Point(85, 44)
         Me.lblAvailableCars.Name = "lblAvailableCars"
-        Me.lblAvailableCars.Size = New System.Drawing.Size(167, 29)
+        Me.lblAvailableCars.Size = New System.Drawing.Size(131, 24)
         Me.lblAvailableCars.TabIndex = 2
         Me.lblAvailableCars.Text = "Available Cars"
         '
@@ -94,18 +94,20 @@ Partial Class frmCarInformation
         'lblPrice
         '
         Me.lblPrice.AutoSize = True
+        Me.lblPrice.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrice.Location = New System.Drawing.Point(196, 237)
         Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(56, 25)
+        Me.lblPrice.Size = New System.Drawing.Size(52, 24)
         Me.lblPrice.TabIndex = 8
         Me.lblPrice.Text = "Price"
         '
         'lblCarSelected
         '
         Me.lblCarSelected.AutoSize = True
+        Me.lblCarSelected.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCarSelected.Location = New System.Drawing.Point(126, 170)
         Me.lblCarSelected.Name = "lblCarSelected"
-        Me.lblCarSelected.Size = New System.Drawing.Size(126, 25)
+        Me.lblCarSelected.Size = New System.Drawing.Size(117, 24)
         Me.lblCarSelected.TabIndex = 7
         Me.lblCarSelected.Text = "Car Selected"
         '
@@ -120,9 +122,10 @@ Partial Class frmCarInformation
         'lblTotalDays
         '
         Me.lblTotalDays.AutoSize = True
+        Me.lblTotalDays.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalDays.Location = New System.Drawing.Point(146, 108)
         Me.lblTotalDays.Name = "lblTotalDays"
-        Me.lblTotalDays.Size = New System.Drawing.Size(106, 25)
+        Me.lblTotalDays.Size = New System.Drawing.Size(100, 24)
         Me.lblTotalDays.TabIndex = 5
         Me.lblTotalDays.Text = "Total Days"
         '
@@ -178,27 +181,30 @@ Partial Class frmCarInformation
         'lblTotalIncVAT
         '
         Me.lblTotalIncVAT.AutoSize = True
+        Me.lblTotalIncVAT.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalIncVAT.Location = New System.Drawing.Point(60, 164)
         Me.lblTotalIncVAT.Name = "lblTotalIncVAT"
-        Me.lblTotalIncVAT.Size = New System.Drawing.Size(185, 25)
+        Me.lblTotalIncVAT.Size = New System.Drawing.Size(198, 27)
         Me.lblTotalIncVAT.TabIndex = 2
         Me.lblTotalIncVAT.Text = "Total Including VAT"
         '
         'lblTotalVAT
         '
         Me.lblTotalVAT.AutoSize = True
+        Me.lblTotalVAT.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalVAT.Location = New System.Drawing.Point(60, 105)
         Me.lblTotalVAT.Name = "lblTotalVAT"
-        Me.lblTotalVAT.Size = New System.Drawing.Size(102, 25)
+        Me.lblTotalVAT.Size = New System.Drawing.Size(104, 27)
         Me.lblTotalVAT.TabIndex = 1
         Me.lblTotalVAT.Text = "Total VAT"
         '
         'lblTotalExVAT
         '
         Me.lblTotalExVAT.AutoSize = True
+        Me.lblTotalExVAT.Font = New System.Drawing.Font("Microsoft YaHei", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalExVAT.Location = New System.Drawing.Point(60, 49)
         Me.lblTotalExVAT.Name = "lblTotalExVAT"
-        Me.lblTotalExVAT.Size = New System.Drawing.Size(192, 25)
+        Me.lblTotalExVAT.Size = New System.Drawing.Size(201, 27)
         Me.lblTotalExVAT.TabIndex = 0
         Me.lblTotalExVAT.Text = "Total Excluding VAT"
         '
@@ -224,11 +230,13 @@ Partial Class frmCarInformation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(934, 681)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.gbxCarDetails)
         Me.Controls.Add(Me.gbxPriceDetails)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "frmCarInformation"
         Me.Text = "Car Information"
         Me.gbxCarDetails.ResumeLayout(False)
